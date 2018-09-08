@@ -13,6 +13,13 @@ namespace PresentationGit.Controllers
             return View();
         }
 
+        public void Presentation(bool IsThisGoingWell)
+        {
+            if (IsThisGoingWell == false)
+            {
+                Getthehellouttahere();
+            }
+        }
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
